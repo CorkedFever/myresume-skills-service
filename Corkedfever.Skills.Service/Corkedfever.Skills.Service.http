@@ -1,0 +1,6 @@
+@Corkedfever.Skills.Service_HostAddress = http://localhost:5279
+
+GET {{Corkedfever.Skills.Service_HostAddress}}/skills/
+Accept: application/json
+
+###
