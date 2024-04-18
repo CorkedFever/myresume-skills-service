@@ -41,7 +41,7 @@ namespace Corkedfever.Skills.Data
         {
             using (var context = _context.CreateDbContext())
             {
-                var skill = context.Skill.FirstOrDefault(x => x.Id == id);
+                var skill = context.Skill.Where(x => x.Id == id).FirstOrDefault();
                 return new SkillsModel
                 {
                     SkillName = skill.SkillName,
@@ -54,18 +54,13 @@ namespace Corkedfever.Skills.Data
         {
             using (var context = _context.CreateDbContext())
             {
-                var skills = context.Skill.ToList();
-                var skillsModel = new List<SkillsModel>();
-                foreach (var skill in skills)
+                var skills = context.Skill.Select(skill=> new SkillsModel
                 {
-                    skillsModel.Add(new SkillsModel
-                    {
-                        SkillName = skill.SkillName,
-                        SkillDescription = skill.SkillDescription
-                        
-                    });
-                }
-                return skillsModel;
+                    SkillName = skill.SkillName,
+                    SkillDescription = skill.SkillDescription
+                }).ToList();
+
+                return skills;
             }
         }
     }
