@@ -31,6 +31,12 @@ namespace Corkedfever.Skills.Data
                     UpdatedDate = DateTime.Now
                 };
 
+                context.Certification.Where(Certification => Certification.Id == 1).FirstOrDefault();
+                context.Email.Where(Email => Email.Id == 1).FirstOrDefault();
+                context.Message.Where(Message => Message.Id == 1).FirstOrDefault();
+                context.Job.Where(Job => Job.Id == 1).FirstOrDefault();
+                context.Education.Where(Education => Education.Id == 1).FirstOrDefault();
+        
 
                 context.Skill.Add(newSkill);
                 context.SaveChanges();

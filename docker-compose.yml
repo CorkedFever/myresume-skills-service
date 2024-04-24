@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  corkedfever.skills.service:
+    image: ${DOCKER_REGISTRY-}corkedfeverskillsservice
+    build:
+      context: .
+      dockerfile: Corkedfever.Skills.Service\Dockerfile
