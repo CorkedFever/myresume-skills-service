@@ -11,6 +11,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corkedfever.Skills.Business
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7490A8ED-B2DA-4C0F-B83D-C6E971B3F004}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{DBD2AADB-4928-4DAB-9519-C2021CA7EFC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{45ECD245-D72E-40C5-8B39-A19F18857984}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corkedfever.Client.Skills", "Corkedfever.Client.Skills\Corkedfever.Client.Skills.csproj", "{E9993124-4F5C-4461-87BB-7B392359C9D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{1ECEB387-CD4E-4925-A530-38BBAF60903F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corkedfever.Testing.Skills", "Corkedfever.Testing.Skills\Corkedfever.Testing.Skills.csproj", "{1A183EA4-C1B4-4153-A266-30A71890F038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +43,24 @@ Global
 		{7490A8ED-B2DA-4C0F-B83D-C6E971B3F004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7490A8ED-B2DA-4C0F-B83D-C6E971B3F004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7490A8ED-B2DA-4C0F-B83D-C6E971B3F004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9993124-4F5C-4461-87BB-7B392359C9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9993124-4F5C-4461-87BB-7B392359C9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9993124-4F5C-4461-87BB-7B392359C9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9993124-4F5C-4461-87BB-7B392359C9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A183EA4-C1B4-4153-A266-30A71890F038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A183EA4-C1B4-4153-A266-30A71890F038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A183EA4-C1B4-4153-A266-30A71890F038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A183EA4-C1B4-4153-A266-30A71890F038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A10BEA27-D39E-4874-A4E9-964907136EFE} = {DBD2AADB-4928-4DAB-9519-C2021CA7EFC5}
+		{223A1C1D-3073-46A1-B423-96215B1DDFBB} = {DBD2AADB-4928-4DAB-9519-C2021CA7EFC5}
+		{414E3ABC-751E-4D37-8341-F1AEDEF7E274} = {DBD2AADB-4928-4DAB-9519-C2021CA7EFC5}
+		{E9993124-4F5C-4461-87BB-7B392359C9D2} = {45ECD245-D72E-40C5-8B39-A19F18857984}
+		{1A183EA4-C1B4-4153-A266-30A71890F038} = {1ECEB387-CD4E-4925-A530-38BBAF60903F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3F905A1-0E39-42F5-BFE8-CD8B54744F9B}
