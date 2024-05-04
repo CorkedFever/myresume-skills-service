@@ -17,7 +17,8 @@ namespace Corkedfever.Skills.Service.Controllers
         }
 
         [HttpGet("GetSkills")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<SkillsModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetSkills()
         {
             try
@@ -31,7 +32,8 @@ namespace Corkedfever.Skills.Service.Controllers
         }
 
         [HttpGet("GetSkill/{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(SkillsModel),StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetSkillbyId(int id)
         {
             try
@@ -46,6 +48,7 @@ namespace Corkedfever.Skills.Service.Controllers
 
         [HttpPost("CreateSkill")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Post([FromBody] SkillsModel skillModel)
         {
             try
