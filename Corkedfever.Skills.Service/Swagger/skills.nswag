@@ -3,7 +3,6 @@
   "defaultVariables": null,
   "documentGenerator": {
     "fromDocument": {
-      "json": "{\r\n  \"openapi\": \"3.0.1\",\r\n  \"info\": {\r\n    \"title\": \"Corkedfever.Skills.Service\",\r\n    \"version\": \"1.0\"\r\n  },\r\n  \"paths\": {\r\n    \"/Skills/GetSkills\": {\r\n      \"get\": {\r\n        \"tags\": [\r\n          \"Skills\"\r\n        ],\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"Success\"\r\n          }\r\n        }\r\n      }\r\n    },\r\n    \"/Skills/GetSkill/{id}\": {\r\n      \"get\": {\r\n        \"tags\": [\r\n          \"Skills\"\r\n        ],\r\n        \"parameters\": [\r\n          {\r\n            \"name\": \"id\",\r\n            \"in\": \"path\",\r\n            \"required\": true,\r\n            \"schema\": {\r\n              \"type\": \"integer\",\r\n              \"format\": \"int32\"\r\n            }\r\n          }\r\n        ],\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"Success\"\r\n          }\r\n        }\r\n      }\r\n    },\r\n    \"/Skills/CreateSkill\": {\r\n      \"post\": {\r\n        \"tags\": [\r\n          \"Skills\"\r\n        ],\r\n        \"requestBody\": {\r\n          \"content\": {\r\n            \"application/json\": {\r\n              \"schema\": {\r\n                \"$ref\": \"#/components/schemas/SkillsModel\"\r\n              }\r\n            },\r\n            \"text/json\": {\r\n              \"schema\": {\r\n                \"$ref\": \"#/components/schemas/SkillsModel\"\r\n              }\r\n            },\r\n            \"application/*+json\": {\r\n              \"schema\": {\r\n                \"$ref\": \"#/components/schemas/SkillsModel\"\r\n              }\r\n            }\r\n          }\r\n        },\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"Success\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  },\r\n  \"components\": {\r\n    \"schemas\": {\r\n      \"SkillsModel\": {\r\n        \"type\": \"object\",\r\n        \"properties\": {\r\n          \"skillName\": {\r\n            \"type\": \"string\",\r\n            \"nullable\": true\r\n          },\r\n          \"skillDescription\": {\r\n            \"type\": \"string\",\r\n            \"nullable\": true\r\n          }\r\n        },\r\n        \"additionalProperties\": false\r\n      }\r\n    }\r\n  }\r\n}",
       "url": "http://localhost:26008/swagger/v1/swagger.json",
       "output": null,
       "newLineBehavior": "Auto"
@@ -21,7 +20,7 @@
       "withCredentials": false,
       "useSingletonProvider": false,
       "injectionTokenType": "InjectionToken",
-      "rxJsVersion": 6.0,
+      "rxJsVersion": 7.0,
       "dateTimeType": "Date",
       "nullValue": "Undefined",
       "generateClientClasses": true,
